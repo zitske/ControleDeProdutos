@@ -196,7 +196,7 @@ public class ControleDeProdutos extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        ControleDeProdutos productRegister = new ControleDeProdutos();
+        new ControleDeProdutos();
     }
 
 }
@@ -265,11 +265,3 @@ class SimpleProduct{
         return new Product(this.name, 0.0, this.barcode,"");
     }
 } 
-
-class ProductException extends Exception {
-
-    public ProductException(String message) {
-        super(message);
-    }
-
-}
